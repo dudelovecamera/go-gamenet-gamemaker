@@ -1,0 +1,1 @@
+network_destroy(udp_socket);
