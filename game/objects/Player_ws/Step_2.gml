@@ -37,6 +37,7 @@ buffer_seek(c_buffer, buffer_seek_start, 0)
 
 buffer_write(c_buffer, buffer_string, jsonString)
    
-  
-	network_send_udp_raw(udp_socket, server_ip, server_port, c_buffer, buffer_tell(c_buffer));
+
+network_send_raw(ws_socket, c_buffer, buffer_tell(c_buffer)) //Ignore the warning
+	
 }
