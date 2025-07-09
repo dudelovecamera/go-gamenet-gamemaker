@@ -1,1 +1,1 @@
-network_destroy(udp_socket);
+network_destroy(ws_socket);
